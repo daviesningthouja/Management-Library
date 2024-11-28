@@ -1,0 +1,66 @@
+.redirect-wrapper{
+    
+    height: 100vh;
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.redirect-box{
+    width:250px;
+    background: rgb(244, 217, 225,.09);
+    border: 2px solid rgb(255,255,255,.2);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}
+
+
+.redirect-admin{
+    border:1px solid rgb(255,255,255,.2);
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    padding: 7px 5px;
+}
+.redirect-student{
+    display: flex;
+    gap: 10px;
+    border:1px solid rgb(255,255,255,.2);
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.2s;
+    padding: 7px 5px;
+}
+
+.redirect-admin:hover, .redirect-student:hover{
+    background: rgb(244, 217, 225,.05);
+    transform: scale(1.1);
+}
+.a-icon{
+    margin-left: 10px;
+
+}
+.s-icon{
+    margin-left:10px;
+}

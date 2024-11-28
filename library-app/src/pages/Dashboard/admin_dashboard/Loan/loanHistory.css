@@ -1,0 +1,63 @@
+.wrapper_loanHistory{
+    height: 100vh;
+    overflow-y: scroll
+}
+.loan-his-d{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.loan-his{
+    width: 50%;
+    flex-direction: column;
+   
+    height: 90vh;
+}
+.loan-overdue{
+    width: 48%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+/* Hide action button initially */
+.hidden {
+    display: none;
+}
+
+.ig{
+
+    border-radius: 50%;
+    transition: all 0.8s;
+}
+.loan-overdue .bg:hover{
+    background-color: grey;
+}
+/* Style for action buttons */
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute; /* Ensures it's positioned next to the dots */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* Style for individual buttons */
+.action-btn button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.action-btn button:hover {
+    background-color: #e0e0e0;
+}
+
+

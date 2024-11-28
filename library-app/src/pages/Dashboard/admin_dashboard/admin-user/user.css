@@ -1,0 +1,12 @@
+.wrapper_admin-user{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.body-form{
+    overflow-y: scroll;
+}
+
+.wrapper_admin-user .bottom-data{
+    margin-top: 24px;
+}

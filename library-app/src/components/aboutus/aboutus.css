@@ -1,0 +1,102 @@
+.aboutus-wrapper{
+    margin-top: 20px;
+    padding: 30px;
+   
+}
+
+.aboutus-section{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.aboutus-section .aboutus-header{
+    margin-bottom: 30px;
+    font-family: var(--fontSSBold);
+    color: white;
+    font-size: 1.8em;
+}
+.aboutus-hero-contain{
+    /* height: 50%;
+    padding: 40px; */
+    
+    width: 80%;
+    margin: auto;
+}
+.hero-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-txt h2{
+    color: white;
+    font-size: 1.7em;
+    font-family: var(--fontSNormal);
+}
+
+.hero-txt p{
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: var(--fontSLight);
+}
+
+.team-header{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.dev-details{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto ;
+    gap: 20px;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.dev-card{
+    background: rgb(244, 217, 225,.09);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    
+    text-align: center;
+    flex-grow: 1;
+    width: 40%;
+    box-sizing: border-box;
+}
+.dev-detail{
+    padding: 20px;
+}
+.dev-card img{
+    height: 300px;
+   
+}
+
+
+.dev-pfp{
+   
+}
+
+
+
+/* fonts */
+.team-header{
+    color: white;
+    margin: 40px 0;
+    font-size: 1.8em;
+    font-family: var(--fontSSBold);
+
+}
+.dev-detail h1{
+    color: white;
+    font-family: 2.8em;
+    font-family: var(--fontSNormal);
+}
+.dev-detail p{
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fontSdown)
+}

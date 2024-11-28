@@ -1,0 +1,98 @@
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  
+}
+
+ 
+.slider-content {
+  display: flex;
+  /* height: 350px; */
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+  overflow-x: scroll ;
+  align-items: center;
+  background-color: grey;
+}
+  
+.book {
+  min-width: 200px; /* 150 */ 
+  margin-inline-start: 17px;
+  
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: transform 0.4s, opacity 0.4s;
+  height: fit-content;
+  background-color: bisque;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.book img {
+  width: 100%;  /*img ta leitharga semmo direct ta nttadbi magi parent div ta height khk semgadba*/
+  height: 100%;
+  border-radius: 5px;
+}
+.book.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+  
+  button.previous, button.next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+  }
+  
+  button.previous {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+
+  .book-image{
+    
+    height: 250px;
+  }
+
+  .book-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 5px;
+  }
+
+  .book-info h3, .book-info p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .hover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .book.hovered .hover-info {
+    opacity: 1;
+  } 

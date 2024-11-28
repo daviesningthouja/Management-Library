@@ -1,0 +1,41 @@
+.library-wrapper{
+  overflow-y: scroll;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 20px;
+  width: fit-content;
+  transition: width 0.4s ease-in-out;
+
+}
+.book-c-h{
+  min-height: 500px;
+}
+
+.search-bar {
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  width: 120px;
+  transition: width 0.4s ease;
+}
+
+.search-bar:focus {
+  width: 200px; 
+  /* Width when focused */
+  
+}
+
+.search-icon {
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+
+

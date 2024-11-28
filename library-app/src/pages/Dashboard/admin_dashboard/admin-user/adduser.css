@@ -1,0 +1,129 @@
+.wrapper_add-user{
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: white;
+    
+    
+}
+.regis-header{
+    display: flex;
+
+}
+.arrow{
+    position: relative;
+    top:10px;
+    left: 20px;
+}
+.detail{
+   left: 37px;
+   top:50px;
+   position: relative;
+
+}
+
+.regis-user-form{
+    width: 80%;
+    
+    margin: 40px auto 0 auto;
+}
+
+.regis-img{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.img-b{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: rgb(167, 170, 170);
+}
+.pos-btn{
+    position: relative;
+    right: -350px;
+    top: -50px;
+}
+.regis-img label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.regis-name{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.regis-name input{
+    margin-left: 70px;
+}
+.regis-id{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.regis-id input{
+    margin-left: 15px
+}
+.regis-department{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+.regis-department input{
+    margin-left: 20px;
+}
+.radio-box{
+    display: flex;
+    gap:10px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.regis-contact{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.regis-contact input{
+    margin-left: 60px
+}
+.regis-email{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.regis-email input{
+    margin-left:70px;
+}
+.regis-ps{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.regis-ps input{
+    margin-left: 46px;
+}
+.sub-btn{
+    display: flex;
+    justify-content: space-around;
+}
+.sub-btn button{
+    padding: 10px 15px;
+    border-radius:20px;
+    border: none;
+    background-color: rgb(160, 160, 160);
+    transition: all 1s;
+    
+}
+
+.sub-btn button:hover{
+    padding: 10px 15px;
+    border-radius:20px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    transition: all 1s;
+    transform: scale(1.1);
+}

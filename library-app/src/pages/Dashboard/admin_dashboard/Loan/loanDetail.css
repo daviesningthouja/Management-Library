@@ -1,0 +1,78 @@
+.loanDetail{
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ln-book{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* height: 75vh; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    
+}
+.book-i{
+    display: flex;
+    align-items: center;
+    background-color: rgb(224, 232, 232);
+    height: 250px;
+    width: 300px;
+    justify-content: center ;
+    border-radius: 10px;
+}
+.book-i img{
+
+    background-color: black;
+    height: 200px;
+    width: 150px;
+   
+}
+.book-ds{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 6px;
+    align-self: flex-start;
+    margin-left: 25px;
+}
+.rn-user{
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+    /* background-color: azure; */
+   
+    flex-direction: column;
+}
+.user-ds{
+    
+    display: flex;
+    height: 150px;
+    align-items: center;
+    /* height: 75vh; */
+    gap: 20px;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 10px;
+}
+.user-i{
+    height: 70px;
+    width: 70px;
+    margin-left:20px ;
+    background-color: grey;
+    border-radius: 50%;
+}
+.user-d{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;  
+  margin-left: 20px;
+}
+.loan-lg{
+    margin-top: 20px;
+}

@@ -1,0 +1,115 @@
+.department-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .h2{
+    display: flex;
+    position: relative;
+    font-family: var(--fontSSBold);
+    font-size: 20px;
+    bottom: -50px;
+    z-index: 1000;
+    justify-content: center;
+  }
+  
+  .popular-sections {
+    display: flex;
+    height: 350px;
+    overflow-x: scroll ;
+    align-items: center;
+    
+    padding: 50px 0 0 0 ;
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+    width: 82.9%;
+  }
+  
+  .section {
+    min-width: 240px; /* 150 */ 
+    margin-inline-start: 17px;
+    min-height: 250px;
+    margin-right: 12px;
+    opacity: 0.8;
+    transition: transform 0.4s, opacity 0.4s;
+    height: fit-content;
+    background-color: #32e857;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px grey;
+  
+  }
+  .section.active {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .icon {
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+  }
+  .icon svg{
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .departments{
+    margin-top: 87px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .popular-sections a {
+    color: #fff;
+    text-decoration: none;
+    
+   
+  }
+  
+  .department-name{
+    flex: 3;
+    
+  }
+  .department-name h2{
+    font-family: var(--fontSNormal);
+    font-size: 13px;
+  }
+  .department-name p{
+    font-family: var(--fontSdown);
+    font-size: 12px;
+  }
+  
+  
+  .category-btn{
+    flex: 1;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .category-btn button{
+  
+    padding: 5px 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: none;
+  }
+  .loading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

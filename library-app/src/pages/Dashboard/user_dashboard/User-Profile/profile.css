@@ -1,0 +1,192 @@
+    .wrapper_profile{
+    background-color: var(--light);
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+
+    max-height: calc(100vh - 56px);
+    overflow: scroll;
+   
+
+    }
+    .loding{
+        background-color: var(--light);
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile_wrapper{ 
+       margin: auto; 
+       width: 70%;
+    
+    } 
+
+    .profile_picture{
+       
+       
+        
+        background: var(--light);
+    }
+    .profile_bg{
+        display:flex;
+        justify-content: center;
+        
+    }
+    .profile_bg img{
+        height: 300px;
+        width: 80%;
+        border: 5px solid;
+        border-top: none;
+        border-color: var(--grey);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px ;
+    }
+    .profile{
+        display: flex;
+        justify-content: center;
+        position: relative;    
+        top: -90px;   
+        
+    }
+    .profile img{
+        position: relative;
+        height: 120px;
+        width: 120px;
+        border: 1px solid;
+        border-color: var(--light);
+        border-radius: 50%;
+        
+
+    }
+    .user_detail{
+        text-align: center;
+        margin-top: -90px;
+        padding-bottom: 100px;
+    }
+    
+    .user_detail h1{
+        font-family: var(--fontSSBold);
+        font-size: 20px;
+        padding: 10px;
+        padding-bottom: 0 ;
+        margin-bottom: 5px;
+    }
+    .user_detail p {
+        font-family: var(--fontSNormal);
+        font-size: 13px;
+    }
+    .profile_btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .mask {
+        position: absolute;
+        color: #000;
+        text-align: center;
+        width: 100%;
+        font-family: var(--fontSNormal);
+        font-weight: bold; /* Corrected duplication */
+        font-size: 15px;
+         
+        overflow: hidden;
+        margin-top: 10px;
+      }
+      
+      /* Animation keyframes */
+      @-webkit-keyframes ani {
+        from {
+          -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+        }
+        to {
+          -webkit-mask-position: 100% 0;
+          mask-position: 100% 0;
+        }
+      }
+      
+      @keyframes ani {
+        from {
+          -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+        }
+        to {
+          -webkit-mask-position: 100% 0;
+          mask-position: 100% 0;
+        }
+      }
+      
+      @-webkit-keyframes ani2 {
+        from {
+          -webkit-mask-position: 100% 0;
+          mask-position: 100% 0;
+        }
+        to {
+          -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+        }
+      }
+      
+      @keyframes ani2 {
+        from {
+          -webkit-mask-position: 100% 0;
+          mask-position: 100% 0;
+        }
+        to {
+          -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+        }
+      }
+      
+      /* Styles for anchor tags */
+      /* a {
+        color: #fefffe;
+      }
+       */
+      /* Styles for button-container-1 */
+      .button-container {
+        position: relative;
+        width: 90px;
+        height: 40px;
+        
+        
+        overflow: hidden;
+        /* border: 1px solid; */
+        font-family: var(--fontSNormal);
+        font-weight: 300;
+        font-size: 15px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+        border-radius: 50px;
+      }
+      
+      /* Button styles for button-container-1 */
+      .button-container button {
+        width: 100%;
+        height: 100%;
+        font-family: var(--fonts1);
+        font-weight: bold; /* Corrected duplication */
+        font-size: 15px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #000; /* Background color */
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+        -webkit-mask-size: 2300% 100%; /* Mask size */
+        mask-size: 2300% 100%; /* Mask size */
+        border: none; /* Border style */
+        color: #fff; /* Text color */
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+      }
+      
+      /* Hover styles for button-container-1 button */
+      .button-container button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+      }
+      

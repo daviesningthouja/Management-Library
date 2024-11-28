@@ -1,0 +1,279 @@
+
+.setting_body{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background-color: var(--light);
+    position: relative;
+    z-index: 1;
+
+}
+.setting_wrapper{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.setting_header{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px ;
+
+    
+}
+.setting_header h1{
+  font-family: var(--fontSNormal);
+  padding: 10px;
+  margin-top: 0px;
+  color: var(--light-dark);
+  font-size: 2.0em;
+ 
+}
+
+.user_detail_edit-form{
+    margin-top: 20px;
+}
+.user_pfp{
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+}
+.pfp{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .pfp img{
+    
+    border: solid black 2px;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    
+   
+}
+/* .edit_pfp{
+    margin-left: 50px;
+}
+.edit_pfp button{
+    padding: 10px 24px;
+    background-color: hsla(309, 6%, 93%, 1);
+    border-radius:50px;
+    border: solid;
+} */
+
+  /* Styles for the mas class */
+.mas {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-family: var(--fontSNormal);
+    font-weight: bold; /* Corrected duplication */
+    font-size: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  /* Animation keyframes */
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @keyframes ani3 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  /* Styles for anchor tags */
+  /* a {
+    color: #ffffff;
+  }
+   */
+  /* Styles for button-container-1 */
+  .button-container-1 {
+    position: relative;
+    width: 90px;
+    height: 40px;
+    margin-left: 50px;
+    
+    overflow: hidden;
+    /* border: 1px solid; */
+    font-family: var(--fontSNormal);
+    font-weight: 300;
+    font-size: 15px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background-color: hsla(309, 5%, 92%, 1);
+  }
+  
+  /* Button styles for button-container-1 */
+  .button-container-1 button {
+    width: 101%;
+    height: 100%;
+    font-family: var(--fontSNormal);
+    font-weight: bold; /* Corrected duplication */
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: hsla(309, 2%, 83%, 1); /* Background color */
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    -webkit-mask-size: 2300% 100%; /* Mask size */
+    mask-size: 2300% 100%; /* Mask size */
+    border: none; /* Border style */
+    color: #fffefe; /* Text color */
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  
+  /* Hover styles for button-container-1 button */
+  /* .button-container-1 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  } */
+  .button-container-1 button:active {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  
+  /* Styles for button-container-3 */
+  .button-container-3 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+  
+  /* Button styles for button-container-3 */
+  .button-container-3 button {
+    width: 101%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; /* Corrected duplication */
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #000; /* Background color */
+    -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png"); /* Mask image */
+    mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png"); /* Mask image */
+    -webkit-mask-size: 7100% 100%; /* Mask size */
+    mask-size: 7100% 100%; /* Mask size */
+    border: none; /* Border style */
+    color: #fff; /* Text color */
+    -webkit-animation: ani2 0.7s steps(70) forwards;
+    animation: ani2 0.7s steps(70) forwards;
+  }
+  
+  /* Hover styles for button-container-3 button */
+  .button-container-3 button:hover {
+    -webkit-animation: ani 0.7s steps(70) forwards;
+    animation: ani 0.7s steps(70) forwards;
+  }
+
+  .user_detail_edit{
+    padding: 5px 20px;
+    margin-top: 5px;
+    
+  }
+
+  .user_detail_edit label h2{
+    padding: 10px 0px;
+    
+    font-size: 0.9em;
+    font-family: var(--fontSNormal);
+    color:  var(--light-dark);
+    font-weight: normal;
+
+  }
+
+  .user_detail_edit .input_box{
+    margin-left: px;
+    padding: 0px;
+  }
+  .user_detail_edit .input_box input{
+    height: 50px;
+    max-width: 100vh;
+    min-width: 400px;
+    width: 400px;
+    border-radius: 20px ;
+    border: solid rgb(146, 145, 145) 2px;
+  }
+
+  .user_detail_edit input::placeholder{
+    text-align: center;
+
+  }
+  
+  .setting_Footer{
+    position: sticky;
+    top: 0;
+       
+    z-index: 2;
+    display: flex;
+    height: 90px;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+  }
+  /* .setting_Footer div{
+    margin-left: 30px;
+  } */

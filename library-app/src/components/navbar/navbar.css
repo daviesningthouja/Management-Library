@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Aloevera;
+    src: url('../../assets/Aloevera-OVoWO.ttf');
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 1) 28%;
+  color: #fff;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  margin: 10px 0 5px 0;
+}
+.navbar_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.navbar_logo-text{
+    font-size: 35px;
+    font-family: var(--fontSNormal);
+    font-weight: bold;
+    color:var(--color-text);
+}
+.wrap{width:100%;}
+.gradient-text{
+  font-family:var(--fontSNormal);
+  background: linear-gradient(to right, rgb(126, 112, 115),rgb(192, 219, 255),rgb(0, 0, 0));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgb(255, 255, 255);
+  font-size:1.2rem;
+  width:80vw;
+  
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+  padding: 13px 12px;
+}
+.gradient-text:hover{
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+.b-box{
+  border-bottom: 1.5px solid  ;
+  border-color:rgba(23, 0, 173, 0.503);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: -5px;
+}
+.navbar_link{
+    width: 100%;
+    min-width: 350px;
+    max-width: 500px;
+    color: white;
+    margin-left: 120px;
+}
+.navbar_link-container{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.navbar_login-container{
+    display: flex;
+    flex-direction: column;
+}
+.navbar_login-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.navbar_login-btn-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.navbar_logo-img{
+    height: 60px;
+    /* width: 60px; */
+}
+.maskLogin {
+    position: absolute;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    font-family: var(--fonts1);
+    font-weight: bold; /* Corrected duplication */
+    font-size: 18px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  /* Animation keyframes */
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  /* Styles for anchor tags */
+  /* a {
+    color: #fefffe;
+  }
+   */
+  /* Styles for button-container-1 */
+  .login-btn-container {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    
+    /* overflow: hidden; */
+    /* border: 1px solid; */
+    font-family: var(--fonts1);
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+  
+  /* Button styles for button-container-1 */
+  .login-btn-container button {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonts1);
+    font-weight: bold; /* Corrected duplication */
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #000000; /* Background color */
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png"); /* Mask image */
+    -webkit-mask-size: 2300% 100%; /* Mask size */
+    mask-size: 2300% 100%; /* Mask size */
+    border: none; /* Border style */
+    color: #ffffff; /* Text color */
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  
+  /* Hover styles for button-container-1 button */
+  .login-btn-container button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  

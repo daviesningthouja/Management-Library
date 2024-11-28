@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006,18004');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+  --fontSdown:'Segoe UI' ;
+  --fontSBold:'Segoe Bold';     
+  --fontSLight: 'Segoe Light'; 
+  --fontSSBold: 'Segoe Semibold';
+  --fontSNormal: 'Segoe Normal'; 
+}
+
+@font-face {
+  font-family: 'Segoe Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Segoe UI Bold'), local('SegoeUI-bold'), local('segoeuib');
+}
+@font-face {
+  font-family: 'Segoe SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
+}
+@font-face {
+  font-family: 'Segoe Normal';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Segoe UI'), local('SegoeUI');
+}
+@font-face {
+  font-family: 'Segoe Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Segoe UI Light'), local('SegoeUI-Light');
+}
+
+
+
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+scroll-behavior: smooth;
+}
+
+
+
+a {
+color: unset;
+text-decoration: none;
+}
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  
+  height: 100vh;
+  overflow: hidden;
+  background:rgba(0, 0, 0, 1) 28%;
+  
+}
+
+
+  /* background: radial-gradient(circle at 0% 0%, rgba(74, 12, 0, 1) 0%, rgba(0, 0, 0, 1) 28%); */
+  
+.wrapper-landing{
+overflow-x: hidden;
+overflow-y: scroll; /* Allows vertical scrolling */
+scrollbar-width: none; /* For Firefox */
+-ms-overflow-style: none;
+scrollbar-color: grey black;
+height: 100%;
+
+    
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.wrapper-landing::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
+
+.gradient_text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--fontSSBold)
+}
+
+.section_padding {
+    padding: 4rem 6rem;
+}
+
+.section_margin {
+    margin: 4rem 6rem;
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}

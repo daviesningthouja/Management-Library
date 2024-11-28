@@ -1,0 +1,201 @@
+.wrapper_user-detail{
+    height: 100vh;
+overflow-x: scroll;
+}
+
+.u-s-d{ 
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px 20px;
+}
+.us-img img{
+    height: 150px;
+    width: 120px;
+}
+.us{
+    margin-top: 30px ;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+.us-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-right: 1px solid gray;
+}
+.us-d{
+    display: flex;
+    flex-direction: column;
+    row-gap:10px ;
+    flex: 2;
+}
+.us-btn{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+}
+.us-update,.us-delete{
+    width: 70px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.us-delete{
+    background-color: hsla(2, 100%, 70%, 0.5);
+}
+.us-update{
+    background-color: hsla(237, 100%, 73%, 0.5);
+}
+.us-delete:hover, .us-update:hover{
+    box-shadow: 0 0 5px gray;
+    opacity: 1;
+ 
+}
+.wrapper_user-detail .bottom-data{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    color: var(--dark);
+  margin: 24px auto 0;
+}
+
+
+.content main .bottom-data>div{
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+}
+
+.content main .bottom-data .header{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+.content main .bottom-data .header h3{
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content main .bottom-data .header .bx{
+    cursor: pointer;
+}
+
+.content main .bottom-data .orders{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.content main .bottom-data .orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content main .bottom-data .orders table th{
+    padding-bottom: 12px;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+
+.content main .bottom-data .orders table td{
+    padding: 16px 0;
+}
+
+.content main .bottom-data .orders table tr td:first-child{
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+}
+
+.content main .bottom-data .orders table td img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content main .bottom-data .orders table tbody tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content main .bottom-data .orders table tbody tr:hover{
+    background: var(--grey);
+}
+
+.content main .bottom-data .orders table tr td .status{
+    font-size: 10px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.content main .bottom-data .orders table tr td .status.completed{
+    background: var(--success);
+}
+
+.content main .bottom-data .orders table tr td .status.process{
+    background: var(--primary);
+}
+
+.content main .bottom-data .orders table tr td .status.pending{
+    background: var(--warning);
+}
+
+.content main .bottom-data .reminders{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.content main .bottom-data .reminders .task-list{
+    width: 100%;
+}
+
+.content main .bottom-data .reminders .task-list li{
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    padding: 14px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content main .bottom-data .reminders .task-list li .task-title{
+    display: flex;
+    align-items: center;
+}
+
+.content main .bottom-data .reminders .task-list li .task-title p{
+    margin-left: 6px;
+}
+
+.content main .bottom-data .reminders .task-list li .bx{
+  cursor: pointer;  
+}
+
+.content main .bottom-data .reminders .task-list li.completed{
+    border-left: 10px solid var(--success);
+}
+
+.content main .bottom-data .reminders .task-list li.not-completed{
+    border-left: 10px solid var(--danger);
+}
+
+.content main .bottom-data .reminders .task-list li:last-child{
+   margin-bottom: 0;
+}

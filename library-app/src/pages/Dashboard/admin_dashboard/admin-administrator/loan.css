@@ -1,0 +1,76 @@
+.wrapper_loan-dash{
+    height: 100vh;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    display: flex;
+}
+.lhs-loan{
+width: 60%;
+
+}
+.loan-form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.rhs-book-d{
+    width: 40%;
+    /* position: absolute;
+    left: 75%;
+    top:20%; */
+}
+.loan-form label{
+    margin:10px 0;
+}
+
+.loan-form input{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.loan-btn{
+    margin: 0 0 0 90px ;
+}
+.loan-btn button{
+    margin-right:10px;
+    padding: 6px 6px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(166, 163, 163);
+    transition: all 1s;
+}
+
+.loan-btn button:hover{
+background-color: rgb(213, 213, 213);
+
+}
+
+.book-detail-bx{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+.book-detail-bx h2{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.book-d-i{
+    margin-top: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-d-i img{
+    background-color: gainsboro;
+    height: 200px;
+    width: 150px;
+}
+.book-d-d{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
