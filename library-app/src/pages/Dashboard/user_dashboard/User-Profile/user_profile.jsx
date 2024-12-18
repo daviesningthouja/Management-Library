@@ -16,8 +16,8 @@ const User_Profile = () => {
   useEffect(() => {
     setLoading(true);
     const token =
-      localStorage.getItem("token") ||
-      sessionStorage.getItem("sessiontoken");
+    localStorage.getItem("token") ||
+    sessionStorage.getItem("sessiontoken");
 
     // Log the token to check if it exists
     //console.log("Token: ", token);

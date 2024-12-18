@@ -47,10 +47,11 @@ function Admin_Topbar({toggleSidebar}) {
         </form>
         <input type="checkbox" id="theme-toggle" hidden onChange={handleThemeToggle}/>
         <label htmlFor="theme-toggle" className="theme-toggle"></label>
-        <a href="#" className="notif">
+      
+        {/* <a href="#" className="notif">
             <i className='bx bx-bell'></i>
             <span className="count">12</span>
-        </a>
+        </a>  */}
         <a href="#" className="profile">
             <img src="#"/>
         </a>

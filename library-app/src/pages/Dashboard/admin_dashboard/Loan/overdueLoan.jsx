@@ -62,7 +62,7 @@ const OverdueLoan = () => {
   };
 
   
-  const handleRemind = async (enrollmentId, userName) => {
+  const handleRemind = async (enrollmentId, userName,) => {
     const token = 
       localStorage.getItem("Admintoken") || sessionStorage.getItem("Adminsessiontoken");
   
@@ -71,7 +71,7 @@ const OverdueLoan = () => {
       navigate('/user/login/admin', {replace: true});
       return;
     }
-  
+    //console.log(enrollmentId)
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,

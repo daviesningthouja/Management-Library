@@ -1,6 +1,6 @@
 const User = require('../models/user.model');
 const Book = require('../models/book.model');
-
+const Notification = require('../models/noti.model')
 const createUser = async (req, res) => {
     try {
         const newUser = new User(req.body);
@@ -88,6 +88,89 @@ const userData =  async (req, res) => {
       res.status(500).json({ message: 'Server error' });
     }
   };
+
+const noti = async (req,res) => {
+    try{
+    const userId = req.user.userId;
+
+    // Fetch user details to get enrollmentId
+    const user = await User.findById(userId).select("enrollmentId");
+
+    if (!user || !user.enrollmentId) {
+      return res.status(404).json({ error: "User or enrollment ID not found" });
+    }
+
+    const enrollmentId = user.enrollmentId;
+
+    // Fetch notifications using enrollmentId
+    const notifications = await Notification.find({ enrollmentId }).sort({ createdAt: -1 });
+
+        
+        res.status(200).json(notifications);
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch notifications' });
+      }
+};
+const showNoti = async(req,res) => {
+    try{
+        const notification = await Notification.find();
+        res.status(200).json(notification);
+    }catch (error) {
+        res.status(500).json({ error: 'Failed to fetch notifications' });
+      }
+}
+const deleteSelectedNoti = async(req,res) => {
+    try {
+        const notificationId = req.params.id;
+        await Notification.findByIdAndDelete(notificationId);
+        res.status(200).json({ message: 'Notification deleted successfully' });
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to delete notification' });
+      }
+}
+
+const notiMarkRead = async (req, res) => {
+    try {
+        const { notificationId } = req.params;
+    
+        // Update the isRead field to true
+        const updatedNotification = await Notification.findByIdAndUpdate(
+          notificationId,
+          { isRead: true },
+          { new: true }
+        );
+    
+        if (!updatedNotification) {
+          return res.status(404).json({ message: 'Notification not found' });
+        }
+    
+        res.status(200).json({ message: 'Notification marked as read', notification: updatedNotification });
+      } catch (error) {
+        console.error('Error marking notification as read:', error);
+        res.status(500).json({ message: 'Internal server error' });
+      }
+    };
+
+const deleteNoti = async (req,res) => {
+    try {
+        const { enrollmentId } = req.body; // Extract enrollmentId from request parameters
+
+        if (!enrollmentId) {
+            return res.status(400).json({ message: 'Enrollment ID is required' });
+        }
+
+        // Delete all notifications for the given enrollmentId
+        const result = await Notification.deleteMany({ enrollmentId });
+
+        res.status(200).json({
+            message: `All notifications for enrollmentId ${enrollmentId} have been deleted.`,
+            deletedCount: result.deletedCount,
+        });
+    } catch (error) {
+        console.error('Error deleting notifications:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
 
 const bookCollection = async (req, res)  => {
     // const userID = req.params.id;
@@ -231,5 +314,10 @@ module.exports = {
     getBorrowedBookDetail,
     getUser,
     getUserBooks,
-    save_fcmToken
+    save_fcmToken,
+    noti,
+    notiMarkRead,
+    deleteNoti,
+    showNoti,
+    deleteSelectedNoti,
 }

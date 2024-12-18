@@ -3,6 +3,7 @@
 //import '../layout/DashboardLayout.css'; // Create this CSS file for styling
 import img from "../../../../assets/pfp.png";
 import { Link } from "react-router-dom";
+import NotificationBell from './icons/Noti-bell';
 function User_Topbar({toggleSidebar,toggleTheme}) {
     //const [isDarkMode, setDarkMode] = useState(false);
 
@@ -29,10 +30,11 @@ function User_Topbar({toggleSidebar,toggleTheme}) {
         </form>
         <input type="checkbox" id="theme-toggle" hidden onChange={toggleTheme}/>
         <label htmlFor="theme-toggle" className="theme-toggle"></label>
-        <a href="#" className="notif">
+        {/* <a href="#" className="notif">
             <i className='bx bx-bell'></i>
             <span className="count">12</span>
-        </a> 
+        </a>  */}
+        <NotificationBell/>
         <div className="profile-pfp">
 
         <Link to="/user/profile">

@@ -18,6 +18,7 @@ const notificationSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  isRead: { type: Boolean, default: false }, // Mark if notification is read
 });
 
 const Notification = mongoose.model("Notification", notificationSchema);

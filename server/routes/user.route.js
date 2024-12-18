@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const {userDB, createUser, updateBorrowedBooks, bookCollection, userData, getBorrowedBookDetail, getUser, getUserBooks, save_fcmToken} = require('../controllers/user.controller');
+const {userDB, createUser, updateBorrowedBooks, bookCollection, userData, getBorrowedBookDetail, getUser, getUserBooks, save_fcmToken, noti, notiMarkRead, deleteNoti, showNoti, deleteSelectedNoti} = require('../controllers/user.controller');
 
 
 router.get('/data', userDB);
@@ -13,6 +13,12 @@ router.get('/user/collection/book/:id',getBorrowedBookDetail);
 router.get('/user/:id',getUser)
 router.get('/:id/books',getUserBooks)
 router.post('/user/student/fcm-token', save_fcmToken)
+router.get('/student/notifications', noti)
+router.patch('/student/mark-read/:notificationId',notiMarkRead);
+router.delete('/student/delete/notification/:id',deleteSelectedNoti);
+router.get('/student/all/noti',showNoti)
+//delete admin only
+router.delete('/student/notification/delete',deleteNoti)
 //app.post('/api/user/student/fcm-token', authMiddleware, async (req, res) => {
     //   const { enrollmentId, fcmToken } = req.body;
     
