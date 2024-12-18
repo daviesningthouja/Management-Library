@@ -4,16 +4,16 @@ import App from './App.jsx'
 import { getMessaging, getToken } from 'firebase/messaging';
 import { initializeApp } from "firebase/app";
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyA5LGTVDTS-YlThPhlpN64Yg9mIseo2kj4",
-  authDomain: "real-time-notification-91200.firebaseapp.com",
-  projectId: "real-time-notification-91200",
-  storageBucket: "real-time-notification-91200.firebasestorage.app",
-  messagingSenderId: "613581524201",
-  appId: "1:613581524201:web:e84236a4337ce63321b478",
-  measurementId: "G-V7TQVNV1VQ",
-};
+// // Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA5LGTVDTS-YlThPhlpN64Yg9mIseo2kj4",
+//   authDomain: "real-time-notification-91200.firebaseapp.com",
+//   projectId: "real-time-notification-91200",
+//   storageBucket: "real-time-notification-91200.firebasestorage.app",
+//   messagingSenderId: "613581524201",
+//   appId: "1:613581524201:web:e84236a4337ce63321b478",
+//   measurementId: "G-V7TQVNV1VQ",
+// };
 
 // Initialize Firebase app
 const app = initializeApp(firebaseConfig);

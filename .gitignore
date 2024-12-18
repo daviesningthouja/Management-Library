@@ -7,6 +7,8 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+server/firebaseAdmin.js
+server/real-time-notification-91200-firebase-adminsdk-88ixi-be3132e96d.json
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
