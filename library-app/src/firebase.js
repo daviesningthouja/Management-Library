@@ -63,3 +63,5 @@ export const onMessageListener = () =>
 
 //   self.registration.showNotification(notificationTitle, notificationOptions);
 // });// Handle background messages
+
+export {firebaseConfig};
