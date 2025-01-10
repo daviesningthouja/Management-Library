@@ -44,7 +44,7 @@ const loanRoutes = require('./routes/loan.route');     // Loan route
 const historyRoutes = require('./routes/history.route'); 
 //router
 app.use('/api/dashboard',authMiddleware,userRoutes);  // Apply authentication middleware to user routes
-app.use('/api/books',bookRoutes);  // Apply middleware to book routes
+app.use('/api/books',authMiddleware,bookRoutes);  // Apply middleware to book routes
 app.use('/api/user', loginRoutes);                // No authentication required for login
 app.use('/api/admin',authMiddleware, adminRoutes); // Apply middleware to admin routes
 app.use('/api/loans',  loanRoutes);  // Loan routes with authentication
@@ -76,7 +76,7 @@ app.use('/api/history', historyRoutes); // History routes with authentication
 //saadasd
 
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () =>{
+app.listen(8080, () =>{
     console.log(`Sever is running on ${PORT}`);
   });
 

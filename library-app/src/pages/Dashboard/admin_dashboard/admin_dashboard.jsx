@@ -24,7 +24,7 @@ const Admin_Dashboard = () =>{
     const fetchRecentLogins = async () => {
         setLoading(true);
         try {
-          const response = await axios.get('http://localhost:8080/api/admin/recent-logins', {
+          const response = await axios.get('http://192.168.1.17:8080/api/admin/recent-logins', {
             headers: {
               Authorization: `Bearer ${token}`, // Use admin token
             },
