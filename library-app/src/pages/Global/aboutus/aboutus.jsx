@@ -35,8 +35,8 @@ const aboutus = () => {
 
         <section className="aboutus-section">
             <h1 className="team-header">Our Team</h1>
-          <div className="dev-details">
-            <div className="dev-card">
+           <div className="dev-details">
+          {/*  <div className="dev-card">
               
                 <img src={Sdnnda} alt="" />
              
@@ -62,7 +62,7 @@ const aboutus = () => {
                 <h1>Haridas</h1>
                 <p>Backend-dev, MIT</p>
               </div>
-            </div>
+            </div> */}
             <div className="dev-card">
              
                 <img src={Me} alt="" />
@@ -72,7 +72,7 @@ const aboutus = () => {
                 <p>Frontend-dev, MIT</p>
               </div>
             </div>
-            <div className="dev-card">
+            {/* <div className="dev-card">
               
                 <img src={ManipurDrake} alt="" />
               
@@ -89,7 +89,7 @@ const aboutus = () => {
                 <h1>Arbin Ngairangbam</h1>
                 <p>Frontend-dev</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
