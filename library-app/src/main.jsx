@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+/*
 import { getMessaging, getToken } from 'firebase/messaging';
 import { initializeApp } from "firebase/app";
 //import { firebaseConfig } from './firebase.js';
@@ -48,7 +49,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-
+*/
 
 import './index.css'
 import {Home, Service,Aboutus,Product, NoPage, Add_user, LoginForm, Registration, User_Dashboard, Admin_Dashboard, Admin_Dash,Admin_User,User_Profile, User_Setting, User_Collection, User_library,BookSlider, Pagination, Borrowed_Bookdetail, User_Detail, Admin_Books, Books_Detail, Book_history, Add_book, Redirect, AdminLogin, Loan_book, Loan_detail, Loan_history, Overdue_Loan, UserBook_detail} from './pages';
