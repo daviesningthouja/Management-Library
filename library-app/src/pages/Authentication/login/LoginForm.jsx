@@ -4,8 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { FaUnlock } from "react-icons/fa";
-import { requestForToken } from "../../../firebase";
-import "../../../firebase";
+//import { requestForToken } from "../../../firebase";
+//import "../../../firebase";
 import axios from "axios";
 
 const LoginForm = () => {
@@ -73,6 +73,7 @@ const LoginForm = () => {
         
         //Retrieve and send FCM token to the backend
         //const messaging = getMessaging(); // Use Firebase Messaging
+        /*
         try {
           const fcmToken = await requestForToken();
           console.log(fcmToken)
@@ -89,7 +90,7 @@ const LoginForm = () => {
        } catch (error) {
          console.error("Error sending FCM token to server:", error);
       }
-
+        */
       navigate("/user/Dashboard");
     }
     } catch (error) {
