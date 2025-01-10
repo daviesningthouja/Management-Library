@@ -1,11 +1,14 @@
 {
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "dist/**",
+      "use": "@vercel/static",
         "headers": {
           "Content-Type": "application/javascript"
         }
       }
+      
     ]
+    
   }
   
