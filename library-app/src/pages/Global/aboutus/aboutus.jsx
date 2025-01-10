@@ -1,12 +1,12 @@
 import React from "react";
 import { MainLayout } from "../../index.js";
-import Advenger from "../../../assets/AvengerSobha.jpg";
-import Sdnnda from "../../../assets/sdnda-hamom.jpg";
-import Kevin from "../../../assets/kevin-show.jpg";
-import Ball from "../../../assets/Ball.jpg";
+// import Advenger from "../../../assets/AvengerSobha.jpg";
+// import Sdnnda from "../../../assets/sdnda-hamom.jpg";
+// import Kevin from "../../../assets/kevin-show.jpg";
+// import Ball from "../../../assets/Ball.jpg";
 import Me from "../../../assets/litterally-me.jpg";
-import ManipurDrake from "../../../assets/mandrakeDchef.jpg";
-import Arbin from "../../../assets/arbin.jpg"
+// import ManipurDrake from "../../../assets/mandrakeDchef.jpg";
+// import Arbin from "../../../assets/arbin.jpg"
 import "./aboutus.css";
 const aboutus = () => {
   return (
