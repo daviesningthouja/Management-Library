@@ -1,14 +1,20 @@
 {
     "routes": [
       {
-        "src": "dist/**",
-      "use": "@vercel/static",
+        "src": "/(.*)",
         "headers": {
           "Content-Type": "application/javascript"
         }
       }
       
-    ]
+    ],
+    "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "outputDirectory": "dist"
     
   }
   
