@@ -4,7 +4,7 @@ import { getMessaging } from "firebase/messaging";
 import { getToken } from "firebase/messaging";
 import { onMessage } from "firebase/messaging";
 //import {onBackgroundMessage} from "firebase/messaging";
-const firebaseConfig = {
+ const firebaseConfig = {
     apiKey: "AIzaSyA5LGTVDTS-YlThPhlpN64Yg9mIseo2kj4",
     authDomain: "real-time-notification-91200.firebaseapp.com",
     projectId: "real-time-notification-91200",
